@@ -34,7 +34,6 @@ require('babel-eslint');
 
 const ruleTester = new RuleTester({parserOptions});
 ruleTester.run('prop-types', rule, {
-  // valid: [],
   valid: [
     {
       code: [
@@ -3607,7 +3606,7 @@ ruleTester.run('prop-types', rule, {
         {message: '\'a.b\' is missing in props validation'}
       ],
       parser: 'babel-eslint'
-    },
+    }
 
   ]
 });
